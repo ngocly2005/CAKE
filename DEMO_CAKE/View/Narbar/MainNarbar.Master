@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainNarbar.master.cs" Inherits="DEMO_CAKE.View.Narbar.MainNarbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .navbar {
+            width: 100%;
+            height: 80px;
+            /*background-color: powderblue;*/
+        }
+        .navbar-custom {
+               padding: 0 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-custom img {
+            width: 70px;
+            height: 70px;
+        }
+        .search-box {
+            position: relative;
+            width: 350px;
+            margin-right:100px;
+        }
+        .style_input_search {
+            width: 100%;
+            border-radius: 25px;
+            border: 1px solid red;
+            padding: 6px 40px 6px 12px;
+        }
+        .search-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: gray;
+            cursor: pointer;
+        }
+        .search-icon:hover {
+            color: red;
+        }
+        .contact-box {
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+        .contact-box i {
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid #ee2c2e;
+            border-radius: 50%;
+            margin-right: 5px;
+            color: #ee2c2e;
+        }
+        .contact-box h5 {
+            margin: 0;
+            font-size: 16px;
+            color: #ee2c2e;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar">
+            <div class="container-fluid navbar-custom">
+                <!-- Logo -->
+                <div>
+                    
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/logo_clean.png" />
+                </div>
+                <!-- Search + Phone -->
+                <div class="d-flex align-items-center">
+                    <div class="search-box">
+                        <input class="style_input_search" type="search" placeholder="Tìm kiếm..." />
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>0000-000-000 | 1111-111-111</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>
