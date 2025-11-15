@@ -5,17 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DEMO_CAKE.Models;
-namespace DEMO_CAKE
+namespace DEMO_CAKE.View.BST_Cake
 {
-    public partial class BST_Special : System.Web.UI.Page
+    public partial class Cake_fresh_fruit : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                var cakesSpecial = CakeRepository.GetByCategory("special");
-                RepeaterSpecial.DataSource = cakesSpecial;
-                RepeaterSpecial.DataBind();
+                var cakesFreshFruit = CakeRepository.GetByCategory("fresh-fruit");
+                ReaterFreshFruit.DataSource = cakesFreshFruit;
+                ReaterFreshFruit.DataBind();
             }
         }
     }

@@ -8,17 +8,16 @@ using DEMO_CAKE.Models;
 
 namespace DEMO_CAKE.View.BST_Cake
 {
-    public partial class BST_Cake20_10 : System.Web.UI.Page
+    public partial class Cake_mouse_phomai_tiramisu : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                var cakes20_10 = CakeRepository.GetByCategory("20-10");
-                Repeater20_10.DataSource = cakes20_10;
-                Repeater20_10.DataBind();
+                var cakesMousePhomaiTiramisu = CakeRepository.GetByCategory("mouse-phomai-tiramisu");
+                ReaterMuosePhomaiTiramisu.DataSource = cakesMousePhomaiTiramisu;
+                ReaterMuosePhomaiTiramisu.DataBind();
             }
         }
-       
     }
 }

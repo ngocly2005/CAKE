@@ -4,11 +4,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <style>
         .Item {
-            width: 270px;
+            width: 250px;
             height: 380px;
             cursor: pointer;
             background-color: white;
-           
             text-align: center;
             transition: all 0.3s ease;
             border-radius: 0 0 10px 10px;
@@ -21,7 +20,7 @@
             }
 
         .imageItem img {
-            width: 270px;
+            width: 250px;
             height: 230px;
             object-fit: cover; /* giúp ảnh vừa khung mà không méo */
             border-radius: 10px 10px 0 0; /* bo góc nhẹ cho đẹp */
@@ -49,24 +48,35 @@
         }
 
         .select_cake {
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
-            margin-left:20px;
-            margin-right:20px
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* luôn 4 item */
+            gap: 20px;
+            width: 100%;
         }
-        .btn_xemThem{
-            background-color:red;
-            border-radius:5px;
-            border:none;
-            color:white;
+
+        .Item {
+            background-color: white;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.3s;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        .btn_xemThem {
+            background-color: red;
+            border-radius: 5px;
+            border: none;
+            color: white;
             padding: 6px;
             font-weight: bold;
         }
-        .Select_cake_20_10{
+
+        .Select_cake_20_10 {
             display: flex;
             flex-direction: column;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
         }
     </style>
@@ -76,53 +86,21 @@
         <h2 class="title_20-10">BST BÁNH GATO 20/10
         </h2>
         <div class="select_cake">
-            <div class="Item ">
-                <div class="imageItem">
-                    <asp:Image ID="Image1" runat="server" ImageUrl="https://origato.com.vn/wp-content/uploads/2025/10/24-600x600.png" />
-                </div>
-                <div>
-                    <h3>BLOOM (pN52)</h3>
-                </div>
-                <div>
-                    <h4>320.000₫</h4>
-                </div>
-            </div>
-
-            <div class="Item ">
-                <div class="imageItem">
-                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/be you.png" />
-                </div>
-                <div>
-                    <h3>BE YOU (PN51)</h3>
-                </div>
-                <div>
-                    <h4>320.000₫</h4>
-                </div>
-            </div>
-
-            <div class="Item ">
-                <div class="imageItem">
-                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Image/Glow up.png" />
-                </div>
-                <div>
-                    <h3>GLOW UP (PN50)</h3>
-                </div>
-                <div>
-                    <h4>320.000₫</h4>
-                </div>
-            </div>
-
-            <div class="Item ">
-                <div class="imageItem">
-                    <asp:Image ID="Image4" runat="server" ImageUrl="~/Image/shine on.png" />
-                </div>
-                <div>
-                    <h3>SHINE ON (PN49)</h3>
-                </div>
-                <div>
-                    <h4>320.000₫</h4>
-                </div>
-            </div>
+            <asp:Repeater ID="Repeater20_10" runat="server">
+                <ItemTemplate>
+                    <div class="Item ">
+                        <div class="imageItem">
+                            <img src='<%# ResolveUrl(Eval("ImageUrl").ToString()) %>' />
+                        </div>
+                        <div>
+                            <h3><%# Eval("Name") %> (<%# Eval("Code") %>)</h3>
+                        </div>
+                        <div>
+                            <h4><%# string.Format("{0:N0}₫", Eval("Price")) %></h4>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
 
         <asp:Button ID="Button1" runat="server" Text="Xem Thêm" CssClass="btn_xemThem" />

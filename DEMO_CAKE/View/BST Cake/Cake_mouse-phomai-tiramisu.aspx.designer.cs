@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DEMO_CAKE {
+namespace DEMO_CAKE.View.BST_Cake {
     
     
-    public partial class BST_Special {
+    public partial class Cake_mouse_phomai_tiramisu {
         
         /// <summary>
-        /// RepeaterSpecial control.
+        /// ReaterMuosePhomaiTiramisu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RepeaterSpecial;
+        protected global::System.Web.UI.WebControls.Repeater ReaterMuosePhomaiTiramisu;
         
         /// <summary>
         /// Button1 control.

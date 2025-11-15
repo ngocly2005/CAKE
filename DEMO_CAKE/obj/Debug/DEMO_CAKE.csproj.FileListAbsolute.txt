@@ -53,5 +53,5 @@ C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\obj\Debug\DEMO_CAKE.csproj
 C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\obj\Debug\DEMO_CAKE.dll
 C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\obj\Debug\DEMO_CAKE.pdb
 C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\bin\Image\logo_clean.png
-C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\obj\Debug\DEMO_CAKE.csproj.AssemblyReference.cache
-C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\obj\Debug\DEMO_CAKE.csproj.Up2Date
+C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\obj\Debug\DEMO_CAKE.csprojAssemblyReference.cache
+C:\Users\ASUS\OneDrive\Dokumen\C#\DEMO_CAKE\DEMO_CAKE\obj\Debug\DEMO_CAKE.csproj.CopyComplete

@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Image\bloom.png" />
+    <Content Include="Image\image_sale.png" />
     <Content Include="View\BST Cake\BST_Special.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
@@ -80,10 +82,16 @@
     </Content>
     <Content Include="Image\shine on.png" />
     <Content Include="View\BST Cake\BST_Cake20-10.aspx" />
+    <Content Include="View\BST Cake\Cake_fresh-fruit.aspx" />
+    <Content Include="View\BST Cake\Cake_mouse-phomai-tiramisu.aspx" />
+    <Content Include="View\BST Cake\Information_sale_company.aspx" />
+    <Content Include="View\Footer\footer1.aspx" />
     <Content Include="View\Narbar\Narbar2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Cake.cs" />
+    <Compile Include="Models\CakeRepository.cs" />
     <Compile Include="View\BST Cake\BST_Special.aspx.cs">
       <DependentUpon>BST_Special.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,6 +116,34 @@
     </Compile>
     <Compile Include="View\BST Cake\BST_Cake20-10.aspx.designer.cs">
       <DependentUpon>BST_Cake20-10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\BST Cake\Cake_fresh-fruit.aspx.cs">
+      <DependentUpon>Cake_fresh-fruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BST Cake\Cake_fresh-fruit.aspx.designer.cs">
+      <DependentUpon>Cake_fresh-fruit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\BST Cake\Cake_mouse-phomai-tiramisu.aspx.cs">
+      <DependentUpon>Cake_mouse-phomai-tiramisu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BST Cake\Cake_mouse-phomai-tiramisu.aspx.designer.cs">
+      <DependentUpon>Cake_mouse-phomai-tiramisu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\BST Cake\Information_sale_company.aspx.cs">
+      <DependentUpon>Information_sale_company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BST Cake\Information_sale_company.aspx.designer.cs">
+      <DependentUpon>Information_sale_company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Footer\footer1.aspx.cs">
+      <DependentUpon>footer1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Footer\footer1.aspx.designer.cs">
+      <DependentUpon>footer1.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Narbar\MainNarbar.Master.cs">
       <DependentUpon>MainNarbar.Master</DependentUpon>
@@ -136,7 +172,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
